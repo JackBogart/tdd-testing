@@ -12,7 +12,7 @@ export default [
     rules: {
       'no-constructor-return': 'error',
       'no-duplicate-imports': 'error',
-      'no-use-before-define': ["error", { functions: false,}],
+      'no-use-before-define': ['error', { functions: false }],
       'no-useless-assignment': 'error',
       'arrow-body-style': [
         'error',
@@ -23,7 +23,7 @@ export default [
       'default-case': 'error',
       'default-case-last': 'error',
       'default-param-last': ['error'],
-      'eqeqeq': 'error',
+      eqeqeq: 'error',
       'no-alert': 'error',
       'no-array-constructor': 'error',
       'no-console': ['warn', { allow: ['warn', 'error'] }],
@@ -76,9 +76,9 @@ export default [
       'prefer-promise-reject-errors': 'error',
       'prefer-rest-params': 'error',
       'prefer-template': 'error',
-      'radix': 'error',
+      radix: 'error',
       'sort-imports': 'error',
-      'yoda': ['error', 'never', { exceptRange: true }],
+      yoda: ['error', 'never', { exceptRange: true }],
     },
   },
   {
@@ -87,6 +87,15 @@ export default [
       'webpack.dev.js',
       'webpack.prod.js',
       'dist/',
+      'babel.config.js',
     ],
+  },
+  {
+    files: ['*.test.js'],
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+      },
+    },
   },
 ];
