@@ -1,37 +1,37 @@
 import { capitalize, reverseString } from './scripts';
 
-test('Capitalizes lowercase word', () => {
-  const input = 'hello world';
+test('Does not change capitalized string', () => {
+  const input = 'Hello world!';
 
-  expect(capitalize(input)).toBe('Hello world');
+  expect(capitalize(input)).toBe('Hello world!');
 });
 
-test('Capitalizes lowercase word 2', () => {
+test('Capitalizes lowercase string', () => {
   const input = 'bill cipher';
 
   expect(capitalize(input)).toBe('Bill cipher');
 });
 
-test('Capitalizes uppercase word 2', () => {
-  const input = 'Bill cipher';
+test('Returns empty string if input is empty', () => {
+  const input = '';
 
-  expect(capitalize(input)).toBe('Bill cipher');
+  expect(capitalize(input)).toBe('');
 });
 
-test('Reverses palindrome', () => {
+test('Reverses string', () => {
   const input = 'racecar';
 
   expect(reverseString(input)).toBe('racecar');
 });
 
-test('Reverses palindrome 2', () => {
-  const input = 'aba';
-
-  expect(reverseString(input)).toBe('aba');
-});
-
-test('Reverses string', () => {
+test('Reverses string 2', () => {
   const input = 'Gravity Falls';
 
   expect(reverseString(input)).toBe('sllaF ytivarG');
+});
+
+test('Returns empty string if input is empty', () => {
+  const input = '';
+
+  expect(reverseString(input)).toBe('');
 });
