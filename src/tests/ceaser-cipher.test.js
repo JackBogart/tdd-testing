@@ -1,4 +1,4 @@
-import caesarCipher from '../src/js/caesar-cipher';
+import caesarCipher from '../js/ceaser-cipher';
 
 test('Shifts lowercase string 3 letters forwards', () => {
   const input = 'abc';

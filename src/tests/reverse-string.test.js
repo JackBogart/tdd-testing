@@ -1,4 +1,4 @@
-import reverseString from '../src/js/reverse-string';
+import reverseString from '../js/reverse-string';
 
 test('Reverses string', () => {
   const input = 'racecar';

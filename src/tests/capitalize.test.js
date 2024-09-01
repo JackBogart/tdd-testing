@@ -1,4 +1,4 @@
-import capitalize from '../src/js/capitalize';
+import capitalize from '../js/capitalize';
 
 test('Does not change capitalized string', () => {
   const input = 'Hello world!';
