@@ -1,4 +1,4 @@
-import createCalculator from '../js/calculator';
+import createCalculator from '../src/js/calculator';
 
 const calculator = createCalculator();
 

@@ -1,4 +1,4 @@
-import analyzeArray from '../js/analyze-array';
+import analyzeArray from '../src/js/analyze-array';
 
 test('Returns the minimum element 1', () => {
   const input = [5, 3, 2, -8, 4, -1000, 99999];
